@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MPX SHOTS — Premium Lacrosse Highlight Tapes</title>
+<meta name="description" content="MPX SHOTS films lacrosse games and cuts premium highlight tapes for players, families and recruiting. We film the game. You get the tape.">
+<meta property="og:title" content="MPX SHOTS — We film the game. You get the tape.">
+<meta property="og:description" content="Premium lacrosse highlight tapes. Booking spring 2027 games now.">
+<meta property="og:image" content="https://mpxshots.com/logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080809;--wh:#F5F5F2;--lime:#C9FF3D;--red:#FF3B30;--grey:#8C8E8C;--card:#121214}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--wh);font-family:Inter,system-ui,sans-serif;line-height:1.5;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'JetBrains Mono',monospace;letter-spacing:.12em;font-size:12px;text-transform:uppercase}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,8,9,.85);backdrop-filter:blur(8px);border-bottom:1px solid #1d1d20}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:900;font-size:20px;letter-spacing:.02em}.logo b{color:var(--lime)}.logo span{font-family:Anton;font-style:italic;font-weight:400;margin-left:6px;letter-spacing:.03em}
+nav .links a{margin-left:22px;font-weight:600;font-size:14px;color:#cfcfcb}
+nav .links a.btn{color:var(--bg)}
+.btn{display:inline-block;background:var(--lime);color:var(--bg);font-weight:800;padding:14px 26px;border-radius:2px;letter-spacing:.04em;text-transform:uppercase;font-size:14px}
+.btn.ghost{background:transparent;color:var(--wh);border:1.5px solid #3a3a3e}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;padding:60px 0}
+.frame{position:absolute;inset:40px;pointer-events:none}
+.frame i{position:absolute;width:60px;height:60px;border:4px solid var(--lime)}
+.frame i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}.frame i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.frame i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}.frame i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+.rec{position:absolute;top:64px;left:72px;display:flex;align-items:center;gap:8px}
+.rec:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--red);animation:blink 1.2s infinite}
+.tc{position:absolute;top:64px;right:72px}
+@keyframes blink{50%{opacity:.2}}
+.hero .wrap{text-align:center;position:relative}
+.hero .mpx{font-weight:900;font-size:clamp(28px,4vw,44px)}.hero .mpx b{color:var(--lime)}
+.hero h1{font-family:Anton;font-style:italic;font-weight:400;font-size:clamp(96px,18vw,220px);line-height:.9;transform:skewX(-6deg);letter-spacing:.01em}
+.hero .tag{margin-top:22px;font-weight:800;letter-spacing:.18em;font-size:clamp(13px,1.6vw,17px)}.hero .tag em{color:var(--lime);font-style:normal}
+.hero .sub{color:var(--grey);margin:14px auto 30px;max-width:520px}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:90px 0;border-top:1px solid #1a1a1d}
+.eyebrow{color:var(--lime);margin-bottom:10px}
+h2{font-family:Anton;font-style:italic;font-weight:400;font-size:clamp(44px,6vw,72px);line-height:1;transform:skewX(-6deg);margin-bottom:18px}
+.lead{color:#c9c9c5;max-width:640px}
+.grid{display:grid;gap:18px;margin-top:40px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid #222226;padding:28px;position:relative}
+.card .n{font-family:Anton;font-style:italic;font-size:44px;color:var(--lime);line-height:1}
+.card h3{font-size:20px;font-weight:800;margin:10px 0 8px}
+.card p{color:#b3b3af;font-size:15px}
+.pkg{display:flex;flex-direction:column}
+.pkg.feat{border-color:var(--lime)}
+.pkg .badge{position:absolute;top:-12px;right:20px;background:var(--lime);color:var(--bg);font-weight:800;font-size:11px;padding:4px 10px;letter-spacing:.1em}
+.pkg ul{list-style:none;margin:16px 0 24px;flex:1}
+.pkg li{padding:7px 0;border-bottom:1px solid #1f1f22;color:#d4d4d0;font-size:15px}
+.pkg li:before{content:"■";color:var(--lime);font-size:9px;margin-right:10px;vertical-align:2px}
+.price{font-family:Anton;font-size:22px;font-style:italic;letter-spacing:.02em}
+form{display:grid;gap:14px;margin-top:34px;max-width:680px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;font-weight:600;color:#bdbdb9;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;background:#0f0f11;border:1px solid #2a2a2e;color:var(--wh);padding:13px 14px;font:inherit;font-size:15px;border-radius:2px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--lime)}
+textarea{min-height:110px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#bdbdb9}.check input{width:auto;margin-top:4px}
+.fine{font-size:13px;color:var(--grey)}
+footer{border-top:1px solid #1a1a1d;padding:40px 0;color:var(--grey);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer a{color:#d4d4d0}
+@media(max-width:640px){nav .links a:not(.btn){display:none}.row{grid-template-columns:1fr}.frame{inset:16px}.frame i{width:34px;height:34px;border-width:3px}.rec{top:30px;left:34px}.tc{top:30px;right:34px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#">MP<b>X</b><span>SHOTS</span></a>
+  <div class="links"><a href="#how">How it works</a><a href="#packages">Packages</a><a class="btn" href="#book">Book a game</a></div>
+</div></nav>
+
+<header class="hero">
+  <div class="frame"><i></i><i></i><i></i><i></i></div>
+  <div class="rec mono">Rec</div>
+  <div class="tc mono" id="tc">00:00:00:00</div>
+  <div class="wrap">
+    <div class="mpx">MP<b>X</b></div>
+    <h1>SHOTS</h1>
+    <p class="tag">WE FILM THE GAME. <em>YOU GET THE TAPE.</em></p>
+    <p class="sub">Premium lacrosse highlight tapes, shot at your games and cut like the pros. Booking spring 2027 games now.</p>
+    <div class="ctas"><a class="btn" href="#book">Book your game</a><a class="btn ghost" href="https://instagram.com/mpxshots" target="_blank" rel="noopener">@mpxshots</a></div>
+  </div>
+</header>
+
+<section id="how"><div class="wrap">
+  <p class="eyebrow mono">How it works</p>
+  <h2>GAMEDAY TO GAME TAPE</h2>
+  <p class="lead">You play. We film from the sideline, pull every goal, assist, save and big play, and hand you a tape you're proud to post and send to coaches.</p>
+  <div class="grid g3">
+    <div class="card"><div class="n">01</div><h3>Book your game</h3><p>Send us the date, field, team and your player's number. We confirm and lock it in.</p></div>
+    <div class="card"><div class="n">02</div><h3>We film it</h3><p>Our crew shoots the full game from the sideline, locked on your player.</p></div>
+    <div class="card"><div class="n">03</div><h3>You get the tape</h3><p>A cinematic highlight cut with cover and end card, plus a short social version ready for Reels, TikTok and Shorts.</p></div>
+  </div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+  <p class="eyebrow mono">Packages</p>
+  <h2>PICK YOUR TAPE</h2>
+  <p class="lead">Every tape is built for the feed and for recruiting. Ask about team and multi-game rates.</p>
+  <div class="grid g3">
+    <div class="card pkg"><h3>Game Cut</h3><p class="price">ONE GAME</p><ul><li>Filmed at one game</li><li>15–30s social cut</li><li>Player cover graphic</li><li>Delivered within a week</li></ul><a class="btn ghost" href="#book">Request pricing</a></div>
+    <div class="card pkg feat"><span class="badge">MOST BOOKED</span><h3>Highlight Tape</h3><p class="price">FULL TAPE</p><ul><li>Filmed at your game</li><li>60–90s highlight tape</li><li>15–30s social cut</li><li>Cover + end card, name, number, class year</li></ul><a class="btn" href="#book">Request pricing</a></div>
+    <div class="card pkg"><h3>Season Tape</h3><p class="price">MULTI-GAME</p><ul><li>Multiple games across the season</li><li>Season highlight tape</li><li>Social cuts after each game</li><li>Recruiting-ready final tape</li></ul><a class="btn ghost" href="#book">Request pricing</a></div>
+  </div>
+</div></section>
+
+<section id="book"><div class="wrap">
+  <p class="eyebrow mono">Book</p>
+  <h2>BOOK YOUR GAME</h2>
+  <p class="lead">Tell us about the game. We'll reply with availability and pricing, usually within a day.</p>
+  <form action="https://formspree.io/f/xvkprwnr" method="POST">
+    <input type="hidden" name="form_type" value="MPX SHOTS Booking">
+    <input type="hidden" name="_subject" value="New MPX SHOTS booking request">
+    <div class="row"><div><label>Parent / guardian name</label><input name="name" required></div><div><label>Email</label><input type="email" name="email" required></div></div>
+    <div class="row"><div><label>Phone</label><input name="phone"></div><div><label>Package</label><select name="package"><option>Highlight Tape</option><option>Game Cut</option><option>Season Tape</option><option>Not sure yet</option></select></div></div>
+    <div class="row"><div><label>Player first name &amp; number</label><input name="player" placeholder="e.g. Jack #12"></div><div><label>Team / club &amp; class year</label><input name="team"></div></div>
+    <div class="row"><div><label>Game date</label><input type="date" name="game_date"></div><div><label>Field / location</label><input name="location"></div></div>
+    <div><label>Anything else?</label><textarea name="message"></textarea></div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> I'm the player's parent or guardian and I'm OK with MPX SHOTS filming my player at this game.</label>
+    <div><button class="btn" type="submit">Send booking request</button></div>
+    <p class="fine">We only post a player's tape publicly with a parent's OK. First name, number, team and class year only.</p>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <div><span class="logo">MP<b>X</b><span>SHOTS</span></span><br>A brand of <a href="https://trainmpx.com">MPX Lacrosse Training</a> · Austin, TX</div>
+  <div><a href="mailto:info@mpxshots.com">info@mpxshots.com</a><br><a href="https://instagram.com/mpxshots" target="_blank" rel="noopener">Instagram @mpxshots</a></div>
+</div></footer>
+<script>
+(function(){var s=0,el=document.getElementById('tc');setInterval(function(){s++;var f=s%30,t=Math.floor(s/30),p=function(n){return('0'+n).slice(-2)};el.textContent='00:'+p(Math.floor(t/60)%60)+':'+p(t%60)+':'+p(f)},1000/30)})();
+</script>
+</body>
+</html>
